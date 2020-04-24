@@ -1,0 +1,55 @@
+Node
+
+node —help // list options
+
+node —v8-options list all features
+
+Command is used to see V8 features behind a flag
+node --v8-options | grep "in progress"
+
+
+node -p
+Command is used to print
+
+For example:
+
+node -p "os.cpus()”
+node -p “process” | less
+
+node -p “process.versions” // you can figure out what version you running of node”
+
+Buffer works with binary streams of data which has no encoding
+
+use string_decoder module to add decoding t buffer
+
+    const buffer = Buffer.from(chunk);
+
+    const { StringDecoder } = require('string_decoder);
+
+    const decoder = new StringDecoder('utf8');
+
+    decoder.write(buffer);
+
+    Require
+
+    require.resolve('find-me'); // you can use to check if a file is present')  
+    
+    Launch Node 
+
+    http.STATUS_CODES  
+
+    terminal will produce a list of codes 
+
+        console.trace // prints like console.log but prints call stack
+
+UTIL module
+        const util = require('util');
+        const debuglog = util.debuglog('web');
+
+        debuglog('fkkkk');
+
+Only prints in debug mode
+         util.deprecate() 
+wrap on function mark as deprecated
+
+        util.inherits() was used before es6 class extends  
